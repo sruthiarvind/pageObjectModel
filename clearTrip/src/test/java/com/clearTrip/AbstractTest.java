@@ -1,5 +1,7 @@
 package com.clearTrip;
 
+import java.io.IOException;
+
 import org.junit.After;
 import org.junit.Before;
 
@@ -7,7 +9,7 @@ public class AbstractTest {
 	AbstractMain main=new AbstractMain();
 
 	@Before
-	public void setUp(){
+	public void setUp() throws IOException{
 		main.openBrowser();
 	}
 	@After 
