@@ -9,4 +9,9 @@ public class ResultsPage extends AbstractMain {
 				By.xpath(".//*[@id='flightForm']/section[2]/div[4]/div/nav/ul/li[1]/table/tbody[2]/tr[2]/td[3]/button"))
 				.click();
 	}
+	public void selectRoom()
+	{
+		driver.findElement(By.className("hotelDetails")).click();
+		
+	}
 }
