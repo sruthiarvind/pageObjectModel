@@ -14,9 +14,9 @@ public class AbstractTest {
 		main.openBrowser();
 	}
 
-	@After
-	public void tearDown() {
-		main.closeBrowser();
-	}
+	//@After
+	//public void tearDown() {
+	//	main.closeBrowser();
+	//}
 
 }
