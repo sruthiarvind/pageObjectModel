@@ -10,9 +10,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
+
+
 public class AbstractMain {
 	static WebDriver driver;
-    
+
+	
 	public void openBrowser() throws IOException {
 	
 		FileInputStream fs = new FileInputStream("C:/Users/arvindkumar/frameworks/ebay/ebay/src/test/resources/or.properties");
@@ -30,8 +33,8 @@ public class AbstractMain {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
-	public void closeBrowser() {
-		driver.close();
-		driver.quit();
-	}
+	//public void closeBrowser() {
+		//driver.close();
+	//	driver.quit();
+	//}
 }
